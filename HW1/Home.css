@@ -1,0 +1,144 @@
+html {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: x-large;
+}
+body {
+  background-color: #444;
+  color: white;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  font-size: 1.75rem;
+  background-color: #333;
+}
+header a {
+  text-decoration: none;
+  color: white;
+  text-shadow: 1px 1px orange;
+  margin: 0 30px;
+}
+
+main > section:nth-child(odd) {
+  background-color: #555;
+}
+
+main > section:nth-child(1) {
+  font-size: 2rem;
+  background-image: url("images/rodeo-drive.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 8rem 0;
+  color: orange;
+  text-shadow: 2px 2px white;
+  text-align: center;
+}
+main > section:nth-child(2) {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 200px;
+}
+main > section:nth-child(2) > div {
+  width: 400px;
+  padding: 1rem;
+  background-color: #555;
+  height: 600px;
+}
+main > section:nth-child(2) > div > .img {
+  height: 250px;
+  background-size: cover;
+}
+
+main > section:nth-child(3) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 200px;
+}
+
+main > section:nth-child(3) div,
+main > section:nth-child(3) img {
+  width: 800px;
+  font-size: 1.25rem;
+  margin: 10px;
+  text-align: justify;
+}
+
+main > section:nth-child(4) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 200px;
+}
+
+main > section:nth-child(4) > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+main > section:nth-child(4) > div:nth-child(even) {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+main > section:nth-child(4) > div img {
+  width: 400px;
+  margin: 10px;
+}
+
+main > section:nth-child(4) > div p {
+  font-size: 1.25rem;
+  text-align: justify;
+}
+
+footer {
+  background-color: #333;
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.25rem;
+  text-align: center;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+#Image404 {
+  padding: 200px;
+  background-image: url("images/404-featured.jpg");
+  background-position: center;
+  background-size: cover;
+  font-size: 4rem;
+  text-align: center;
+  color: black;
+  position: relative;
+}
+#Image404::after {
+  content: "Page Not Found";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(238, 142, 32, 0.5);
+}
+#Text404 {
+  padding: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  text-align: center;
+}
