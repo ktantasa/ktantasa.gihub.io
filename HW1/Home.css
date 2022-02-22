@@ -63,7 +63,7 @@ main > section:nth-child(3) {
 main > section:nth-child(3) div,
 main > section:nth-child(3) img {
   width: 800px;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   margin: 10px;
   text-align: justify;
 }
@@ -89,7 +89,7 @@ main > section:nth-child(4) > div:nth-child(even) {
 }
 
 main > section:nth-child(4) > div img {
-  width: 400px;
+  width: 425px;
   margin: 10px;
 }
 
