@@ -1,0 +1,60 @@
+.red {
+  color: red;
+}
+.maroon {
+  color: maroon;
+}
+html {
+  font-size: 200%;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form-element {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.form-element label,
+.form-element div {
+  text-align: left;
+  display: inline-block;
+  width: 250px;
+  position: relative;
+}
+.form-element label {
+  text-align: right;
+  width: 140px;
+  font-weight: bold;
+}
+.form-element input {
+  width: 100%;
+  padding: 10px 2px;
+}
+.form-element button {
+  background-color: rgb(0, 119, 255);
+  color: white;
+  padding: 10px 20px;
+  border: 0;
+  font-size: 0.7rem;
+}
+.form-element sub {
+  display: none;
+  position: absolute;
+  top: 30px;
+  background-color: #333;
+  z-index: 10000;
+  color: white;
+  font-size: 33%;
+}
+.form-element:hover sub {
+  display: block;
+}
+.form-element:hover .error sub {
+  border-radius: 25px;
+  padding: 10px;
+}

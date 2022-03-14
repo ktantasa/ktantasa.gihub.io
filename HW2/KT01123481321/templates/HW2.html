@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HW2</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <h2 class="maroon">Blood Pressure Predictor</h2>
+    <p class="maroon">Fill out the form to get your Blood Pressure estimate!</p>
+    <form action="/" method="POST">
+      <div class="form-element">
+        <label for="age">Age <span class="red">*</span></label>
+        <div>
+          <input
+            type="number"
+            name="age"
+            id="age"
+            placeholder="Enter age in years"
+          />
+          <sub>Please enter a number.</sub>
+        </div>
+      </div>
+      <div class="form-element">
+        <label for="weight">Weight <span class="red">*</span></label>
+        <div>
+          <input
+            type="number"
+            name="weight"
+            id="weight"
+            placeholder="Enter weight in kg"
+          />
+          <sub>Please enter a number.</sub>
+        </div>
+      </div>
+      <div class="form-element">
+        <button type="submit">Calculate</button>
+      </div>
+    </form>
+    <p><strong>{{ pressure }}</strong></p>
+    <script src="/static/app.js"></script>
+  </body>
+</html>
